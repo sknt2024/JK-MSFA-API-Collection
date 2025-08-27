@@ -1,0 +1,526 @@
+{
+	"info": {
+		"_postman_id": "16d23f4d-1afa-486a-8d30-16fed555e0e8",
+		"name": "JK MSFA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38347683"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "/phone-login",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY5MDI5NzRjNDQyZDA2NjNiZDZjMjQiLCJTQVBfSUQiOiJTRTMxMTEwMSIsImlhdCI6MTc0Njc4NTQ0MCwiZXhwIjoxNzQ5Mzc3NDQwfQ.ZtONfznMgWsNVEDyP-TNy9wMXaaScdxwnQOLuht3qTM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"SAP_ID\":\"SO111101\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/phone-login",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"phone-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"SAP_ID\":\"SO111101\",\n    \"pin\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/verifyOtp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"SAP_ID\":\"SO111101\",\n    \"otpValue\":\"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/verifyOtp",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"verifyOtp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HOME",
+			"item": [
+				{
+					"name": "/task/homeSummary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/task/homeSummary",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"task",
+								"homeSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/visit/homeSummary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/visit/homeSummary",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"visit",
+								"homeSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/territory/performance/orderValue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/user/territory/performance/salesValue",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"territory",
+								"performance",
+								"salesValue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/pjp/pjpHomeSummary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/pjp/pjpHomeSummary",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pjp",
+								"pjpHomeSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Outstanding",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pjp Report",
+			"item": [
+				{
+					"name": "/pjp/reportPjpCounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/v1/pjp/reportPjpCounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"pjp",
+								"reportPjpCounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Adoption Report",
+			"item": [
+				{
+					"name": "/adoptionReport/adoptionReportAllData. dealerwise data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTUxZmQxNTRkZTcyN2U1MjY1MTQwYWIiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NjEwMzM2NiwiZXhwIjoxNzU4Njk1MzY2fQ._udsepyv8SjSG0ZjJYsGwvCcqukh7_xWksz_1iag2cU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-prod-api-v1.jktyre.co.in/api/v1/adoptionReport/adoptionReportAllData?startdate=2024-03-18&enddate=2025-03-18&dealer=1100644",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-prod-api-v1",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adoptionReport",
+								"adoptionReportAllData"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "2024-03-18"
+								},
+								{
+									"key": "enddate",
+									"value": "2025-03-18"
+								},
+								{
+									"key": "dealer",
+									"value": "1100644"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Catalogue",
+			"item": [
+				{
+					"name": "/document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/document?page=1&limit=1",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LearningResources",
+			"item": [
+				{
+					"name": "/learningResource/createResource",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/applore/Downloads/applicationTutorialDummyVideo.mp4"
+								},
+								{
+									"key": "documentTitle",
+									"value": "title3",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "descriptionnnnnnnn3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/learningResource/createResource",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"learningResource",
+								"createResource"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/learningResource/getResource",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NzY0YzRkZTcyN2U1MjZhYzE5NzEiLCJTQVBfSUQiOiJTTzExMTEwMSIsImlhdCI6MTc1NTc2Nzc1OSwiZXhwIjoxNzU4MzU5NzU5fQ.ap7B2nN-VjL0Bb92a1TzwqrJJLla5zzlTDw0r29VxzU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://jk-msfa-dev-api.jktyre.co.in/api/v1/learningResource/getResource?page=1&limit=10",
+							"protocol": "http",
+							"host": [
+								"jk-msfa-dev-api",
+								"jktyre",
+								"co",
+								"in"
+							],
+							"path": [
+								"api",
+								"v1",
+								"learningResource",
+								"getResource"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
